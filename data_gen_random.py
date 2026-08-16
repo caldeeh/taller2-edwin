@@ -11,9 +11,12 @@ print(vals)
 plt.hist(vals, bins=30, edgecolor="black", color="skyblue", density=True)
 
 # 2. Agregar títulos y etiquetas a los ejes
-plt.title("Distribución Normal (Campana de Gauss)")
+plt.title("Distribución Normal (Campana de Gauss) - mu=4, sigma=0.8")
 plt.xlabel("Valores")
 plt.ylabel("Densidad de probabilidad")
+
+# 3. Agregar una cuadrícula para facilitar la lectura
+plt.grid(True, linestyle="--", alpha=0.5)
 
 # 3. Mostrar el gráfico en pantalla
 plt.show()
